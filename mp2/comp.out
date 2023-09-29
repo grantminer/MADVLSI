@@ -1,0 +1,50 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: latch                           |Circuit 2: latch                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (7)                |sky130_fd_pr__pfet_01v8 (7)                
+sky130_fd_pr__nfet_01v8 (7)                |sky130_fd_pr__nfet_01v8 (7)                
+Number of devices: 14                      |Number of devices: 14                      
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: latch                           |Circuit 2: latch                           
+-------------------------------------------|-------------------------------------------
+Q                                          |Q                                          
+Qb                                         |Qbar **Mismatch**                          
+D                                          |D                                          
+Db                                         |Dbar **Mismatch**                          
+VDD                                        |VP **Mismatch**                            
+GND                                        |VN **Mismatch**                            
+Phi                                        |CLK **Mismatch**                           
+---------------------------------------------------------------------------------------
+Cell pin lists for latch and latch altered to match.
+Device classes latch and latch are equivalent.
+
+Subcircuit summary:
+Circuit 1: sr.spice                        |Circuit 2: layout/sr.spice                 
+-------------------------------------------|-------------------------------------------
+latch (4)                                  |latch (4)                                  
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes sr.spice and layout/sr.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

@@ -1,0 +1,26 @@
+* SPICE3 file created from sr.ext - technology: sky130A
+
+.subckt latch VP D Dbar VN CLK Q Qbar
+X0 a_244_982# CLK VP VP sky130_fd_pr__pfet_01v8 ad=0.574 pd=3.32 as=0.608 ps=3.38 w=4.01 l=0.15
+X1 a_n84_1280# a_n60_982# a_n60_60# VN sky130_fd_pr__nfet_01v8 ad=0.305 pd=1.61 as=0.574 ps=3.32 w=1 l=0.15
+X2 a_n60_982# a_n84_1280# a_n60_60# VN sky130_fd_pr__nfet_01v8 ad=0.305 pd=1.61 as=0.574 ps=3.32 w=1 l=0.15
+X3 Q CLK a_n84_1280# VN sky130_fd_pr__nfet_01v8 ad=0.255 pd=1.51 as=0.305 ps=1.61 w=1 l=0.15
+X4 VP a_n84_1280# a_n60_982# VP sky130_fd_pr__pfet_01v8 ad=0.608 pd=3.38 as=0.305 ps=1.61 w=1 l=0.15
+X5 VN Q Qbar VN sky130_fd_pr__nfet_01v8 ad=0.48 pd=2.96 as=0.305 ps=1.61 w=1 l=0.15
+X6 VN Qbar Q VN sky130_fd_pr__nfet_01v8 ad=0.48 pd=2.96 as=0.255 ps=1.51 w=1 l=0.15
+X7 a_n60_982# CLK Dbar VP sky130_fd_pr__pfet_01v8 ad=0.305 pd=1.61 as=0.5 ps=3 w=1 l=0.15
+X8 a_n60_60# CLK VN VN sky130_fd_pr__nfet_01v8 ad=0.574 pd=3.32 as=2.01 ps=9.02 w=4.01 l=0.15
+X9 VP a_n60_982# a_n84_1280# VP sky130_fd_pr__pfet_01v8 ad=0.608 pd=3.38 as=0.255 ps=1.51 w=1 l=0.15
+X10 Q Qbar a_244_982# VP sky130_fd_pr__pfet_01v8 ad=0.61 pd=3.22 as=0.574 ps=3.32 w=1 l=0.15
+X11 Qbar CLK a_n60_982# VN sky130_fd_pr__nfet_01v8 ad=0.305 pd=1.61 as=0.305 ps=1.61 w=1 l=0.15
+X12 Qbar Q a_244_982# VP sky130_fd_pr__pfet_01v8 ad=0.61 pd=3.22 as=0.574 ps=3.32 w=1 l=0.15
+X13 a_n84_1280# CLK D VP sky130_fd_pr__pfet_01v8 ad=0.255 pd=1.51 as=0.5 ps=3 w=1 l=0.15
+.ends
+
+Xlatch_0 VP latch_0/D latch_0/Dbar VN latch_3/CLK latch_1/D latch_1/Dbar latch
+Xlatch_1 VP latch_1/D latch_1/Dbar VN latch_3/CLK latch_2/D latch_2/Dbar latch
+Xlatch_2 VP latch_2/D latch_2/Dbar VN latch_3/CLK latch_3/D latch_3/Dbar latch
+Xlatch_3 VP latch_3/D latch_3/Dbar VN latch_3/CLK latch_3/Q latch_3/Qbar latch
+X0 latch_0/Dbar latch_0/D VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X1 latch_0/Dbar latch_0/D VN VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+

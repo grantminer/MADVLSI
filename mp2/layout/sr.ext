@@ -1,0 +1,226 @@
+timestamp 1695950478
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use latch latch_3 1 0 2568 0 1 198
+use latch latch_2 1 0 1786 0 1 198
+use latch latch_1 1 0 1004 0 1 198
+use latch latch_0 1 0 222 0 1 198
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "VP" 3 -414 1282 -414 1282 m1
+port "VN" 4 -414 963 -414 963 m1
+node "a_n144_863#" 767 290.64 -144 863 ndif 0 0 0 0 0 0 0 0 20000 600 20000 600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36128 1342 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n174_833#" 1192 449.116 -174 833 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23770 1478 0 0 20816 1168 0 0 0 0 0 0 0 0 0 0 0 0
+node "VP" 2038 691.637 -414 1282 m1 0 0 0 0 114800 1380 0 0 20000 600 20000 600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32400 720 73800 1180 0 0 0 0 0 0 0 0 0 0
+substrate "VN" 0 0 -414 963 m1 0 0 0 0 0 0 0 0 20000 600 20000 600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32400 720 73800 1180 0 0 0 0 0 0 0 0 0 0
+cap "a_n174_833#" "VP" 83.3744
+cap "a_n144_863#" "a_n174_833#" 47.5203
+cap "a_n144_863#" "VP" 162.186
+device msubckt sky130_fd_pr__nfet_01v8 -174 863 -173 864 l=30 w=200 "VN" "a_n174_833#" 60 0 "VN" 200 20000,600 "a_n144_863#" 200 20000,600
+device msubckt sky130_fd_pr__pfet_01v8 -174 1182 -173 1183 l=30 w=200 "VP" "a_n174_833#" 60 0 "VP" 200 20000,600 "a_n144_863#" 200 20000,600
+cap "latch_1/a_n84_1280#" "latch_3/VN" 0.105547
+cap "latch_0/D" "latch_0/a_n84_1280#" 0.504673
+cap "latch_0/D" "latch_1/Dbar" 0.00275033
+cap "latch_0/a_n60_60#" "latch_0/Dbar" 0.231939
+cap "latch_1/a_n60_60#" "latch_1/Dbar" 0.117269
+cap "latch_3/VN" "latch_0/Dbar" 46.5362
+cap "latch_3/CLK" "latch_1/D" 8.39804
+cap "latch_3/VN" "latch_1/a_n60_982#" 0.0950088
+cap "latch_3/VP" "latch_3/VN" -1.13687e-13
+cap "latch_3/VP" "latch_0/a_244_982#" -2.84217e-14
+cap "latch_3/VP" "latch_0/Dbar" 18.7717
+cap "latch_3/VN" "latch_0/D" 1.88811
+cap "latch_1/D" "latch_1/Dbar" -1.42109e-14
+cap "latch_3/VN" "latch_0/a_n60_982#" 0.0226068
+cap "latch_3/CLK" "latch_1/Dbar" 3.07422
+cap "latch_3/VN" "latch_1/a_n60_60#" 0.195
+cap "latch_3/VN" "latch_2/D" 0.0564427
+cap "latch_0/Dbar" "latch_0/a_n60_982#" 10.24
+cap "latch_0/D" "latch_1/a_n60_982#" 0.000926398
+cap "latch_3/VP" "latch_0/D" 3.69348
+cap "latch_3/VP" "latch_0/a_n60_982#" 2.09591
+cap "latch_3/VP" "latch_1/a_n60_60#" -4.44089e-16
+cap "latch_1/D" "latch_1/a_n84_1280#" 4.90283
+cap "latch_1/D" "latch_3/VN" 10.6534
+cap "latch_3/CLK" "latch_3/VN" 24.406
+cap "latch_0/D" "latch_0/a_n60_982#" 0.108228
+cap "latch_3/VN" "latch_2/Dbar" 0.0376048
+cap "latch_3/VN" "latch_0/a_n84_1280#" 0.00703646
+cap "latch_1/a_n84_1280#" "latch_1/Dbar" 0.174691
+cap "latch_1/D" "latch_1/a_n60_982#" 1.15077
+cap "latch_3/CLK" "latch_0/Dbar" 2.19236
+cap "latch_3/VP" "latch_1/D" 2.75082
+cap "latch_3/VN" "latch_1/Dbar" 2.5189
+cap "latch_3/VP" "latch_3/CLK" 6.61152
+cap "latch_0/a_n84_1280#" "latch_0/Dbar" 0.263517
+cap "latch_3/CLK" "latch_0/D" 8.05797
+cap "latch_3/VP" "latch_0/a_n84_1280#" 7.10543e-15
+cap "latch_1/Dbar" "latch_1/a_n60_982#" 7.22049
+cap "latch_3/VP" "latch_1/Dbar" 21.2887
+cap "latch_3/VN" "latch_0/a_n60_60#" 0.0356951
+cap "latch_0/D" "latch_2/Dbar" 0.000557024
+cap "latch_3/a_n84_1280#" "latch_3/Dbar" 0.174691
+cap "latch_3/VP" "latch_1/a_244_982#" -2.84217e-14
+cap "latch_3/D" "latch_3/a_n60_982#" 1.15077
+cap "latch_3/VN" "latch_2/D" 10.651
+cap "latch_3/VN" "latch_3/a_n60_982#" 0.0920921
+cap "latch_3/VP" "latch_3/Dbar" 13.4663
+cap "latch_3/VN" "latch_3/Q" 0.0559396
+cap "latch_3/Dbar" "latch_3/a_n60_60#" 0.117269
+cap "latch_3/VP" "latch_2/a_n60_982#" 1.78647
+cap "latch_2/D" "latch_2/a_n84_1280#" 9.75539
+cap "latch_3/VP" "latch_1/a_n84_1280#" 7.10543e-15
+cap "latch_2/D" "latch_3/CLK" 9.0123
+cap "latch_3/VN" "latch_2/Dbar" 2.50704
+cap "latch_3/VP" "latch_1/a_n60_982#" 1.78647
+cap "latch_2/Dbar" "latch_2/a_n60_60#" 0.117269
+cap "latch_3/VP" "latch_2/a_244_982#" -2.84217e-14
+cap "latch_3/VN" "latch_3/D" 10.6894
+cap "latch_2/a_n84_1280#" "latch_2/Dbar" 0.174691
+cap "latch_2/D" "latch_2/a_n60_982#" 1.85803
+cap "latch_3/VN" "latch_2/a_n60_60#" 0.190486
+cap "latch_3/Dbar" "latch_3/a_n60_982#" 7.22049
+cap "latch_2/Dbar" "latch_3/CLK" 3.07422
+cap "latch_3/VN" "latch_2/a_n84_1280#" 1.96342
+cap "latch_1/D" "latch_3/CLK" 0.61426
+cap "latch_3/VP" "latch_2/D" 2.75082
+cap "latch_3/D" "latch_3/CLK" 4.50615
+cap "latch_3/VN" "latch_3/Qbar" 0.0352714
+cap "latch_3/VN" "latch_3/CLK" 32.2091
+cap "latch_2/Dbar" "latch_2/a_n60_982#" 14.3233
+cap "latch_3/D" "latch_3/Dbar" -6.66134e-16
+cap "latch_2/a_n84_1280#" "latch_3/CLK" 2.84217e-14
+cap "latch_1/D" "latch_1/a_n84_1280#" 4.85256
+cap "latch_3/VN" "latch_3/Dbar" 2.44364
+cap "latch_3/VN" "latch_2/a_n60_982#" 1.69018
+cap "latch_3/VP" "latch_2/Dbar" 21.2887
+cap "latch_3/D" "latch_3/a_n84_1280#" 4.90283
+cap "latch_3/VN" "latch_1/a_n84_1280#" 1.85868
+cap "latch_3/VN" "latch_3/a_n84_1280#" 0.104736
+cap "latch_3/VP" "latch_3/D" 2.75082
+cap "latch_3/VN" "latch_3/VP" -9.76996e-14
+cap "latch_1/a_n60_982#" "latch_1/D" 0.707254
+cap "latch_3/VN" "latch_3/a_n60_60#" 0.190486
+cap "latch_3/VN" "latch_1/a_n60_982#" 1.59809
+cap "latch_3/Dbar" "latch_3/CLK" 1.82576
+cap "latch_1/a_n60_982#" "latch_1/Dbar" 7.1028
+cap "latch_1/a_n84_1280#" "latch_3/CLK" 2.84217e-14
+cap "latch_3/VP" "latch_2/a_n84_1280#" 7.10543e-15
+cap "latch_2/D" "latch_2/Dbar" -1.42109e-14
+cap "latch_3/VP" "latch_3/CLK" 3.53557
+cap "latch_3/CLK" "latch_3/a_n84_1280#" 2.84217e-14
+cap "latch_3/a_n60_982#" "latch_3/D" 0.707254
+cap "latch_3/VN" "latch_3/a_n84_1280#" 1.85868
+cap "latch_3/a_n60_982#" "latch_3/VP" 1.78647
+cap "latch_3/Dbar" "latch_3/CLK" 1.24846
+cap "latch_3/VN" "latch_3/CLK" 17.0832
+cap "latch_3/Dbar" "latch_3/VN" 0.0986803
+cap "latch_3/D" "latch_3/a_n84_1280#" 4.85256
+cap "latch_3/CLK" "latch_3/D" 4.50615
+cap "latch_3/Dbar" "latch_3/a_n60_982#" 7.1028
+cap "latch_3/VN" "latch_3/D" 0.0175417
+cap "latch_3/VP" "latch_3/CLK" 3.53557
+cap "latch_3/a_n60_982#" "latch_3/VN" 1.59809
+cap "latch_1/Dbar" "latch_1/a_n60_982#" 2.32577
+cap "latch_1/D" "latch_3/VP" 49.9255
+cap "latch_1/Dbar" "latch_1/a_n84_1280#" 4.18496
+cap "latch_1/Dbar" "latch_3/VN" 1.38778e-17
+cap "latch_0/a_n60_982#" "latch_3/VP" 1.09327
+cap "latch_3/CLK" "latch_1/Dbar" 11.7445
+cap "latch_1/a_n84_1280#" "latch_3/VN" -1.11022e-16
+cap "latch_3/CLK" "latch_1/a_n84_1280#" 1.42109e-14
+cap "latch_3/CLK" "latch_3/VN" -4.44089e-16
+cap "latch_3/VN" "latch_0/a_n84_1280#" -2.22045e-16
+cap "latch_3/VP" "latch_0/D" 59.1624
+cap "latch_0/a_n60_982#" "latch_0/D" 4.31634
+cap "latch_3/CLK" "latch_0/a_n84_1280#" -1.42109e-14
+cap "latch_0/Dbar" "latch_0/D" -1.77636e-15
+cap "latch_1/Dbar" "latch_1/D" -1.42109e-14
+cap "latch_1/a_n60_982#" "latch_3/VP" 0.0372568
+cap "latch_1/Dbar" "latch_3/VP" 16.0885
+cap "latch_1/D" "latch_1/a_n84_1280#" 26.2516
+cap "latch_1/D" "latch_3/VN" 1.11022e-16
+cap "latch_3/CLK" "latch_1/D" 24.3049
+cap "latch_1/a_n84_1280#" "latch_3/VP" 16.0596
+cap "latch_3/CLK" "latch_3/VP" 44.7218
+cap "latch_3/CLK" "latch_0/a_n60_982#" 1.55039
+cap "latch_3/VN" "latch_0/D" 5.55112e-17
+cap "latch_0/D" "latch_0/a_n84_1280#" 30.686
+cap "latch_3/CLK" "latch_0/D" 16.075
+cap "latch_1/Dbar" "latch_3/VP" 0.0722319
+cap "latch_3/CLK" "latch_3/Dbar" 6.36777
+cap "latch_3/VN" "latch_3/D" 1.11022e-16
+cap "latch_2/Dbar" "latch_2/a_n60_982#" 4.65155
+cap "latch_3/VP" "latch_3/a_n60_982#" 0.0372568
+cap "latch_3/VP" "latch_1/a_244_982#" 0.0857917
+cap "latch_2/D" "latch_2/a_n60_982#" 0.0344477
+cap "latch_2/a_n84_1280#" "latch_2/Dbar" 4.18496
+cap "latch_3/VN" "latch_3/Dbar" 1.38778e-17
+cap "latch_3/CLK" "latch_2/Dbar" 11.7445
+cap "latch_3/VP" "latch_2/a_n60_982#" 2.73971
+cap "latch_2/D" "latch_2/a_n84_1280#" 26.2516
+cap "latch_3/D" "latch_3/Dbar" -6.66134e-16
+cap "latch_3/VP" "latch_1/D" 0.14777
+cap "latch_3/CLK" "latch_2/D" 24.3049
+cap "latch_3/VP" "latch_2/a_n84_1280#" 16.0596
+cap "latch_3/VP" "latch_3/CLK" 43.5125
+cap "latch_3/VN" "latch_2/Dbar" 1.38778e-17
+cap "latch_3/VN" "latch_2/D" 1.11022e-16
+cap "latch_1/a_n60_982#" "latch_3/VP" 2.70245
+cap "latch_3/VP" "latch_3/D" 42.0295
+cap "latch_3/D" "latch_3/a_n84_1280#" 12.8754
+cap "latch_2/a_n84_1280#" "latch_2/a_n60_982#" -1.42109e-14
+cap "latch_1/Dbar" "latch_1/a_n60_982#" 2.32577
+cap "latch_3/CLK" "latch_2/a_n60_982#" 0.899225
+cap "latch_3/VP" "latch_3/Dbar" 16.0885
+cap "latch_3/a_n84_1280#" "latch_3/Dbar" 2.24909
+cap "latch_3/CLK" "latch_2/a_n84_1280#" 1.42109e-14
+cap "latch_3/VP" "latch_1/a_n84_1280#" 5.68434e-14
+cap "latch_3/VP" "latch_0/a_244_982#" 0.0857917
+cap "latch_2/D" "latch_2/Dbar" -1.42109e-14
+cap "latch_3/VP" "latch_2/Dbar" 16.1607
+cap "latch_3/a_n60_982#" "latch_3/Dbar" 2.32577
+cap "latch_1/a_n60_982#" "latch_1/D" 0.0344477
+cap "latch_3/VN" "latch_2/a_n84_1280#" -2.22045e-16
+cap "latch_3/VP" "latch_2/D" 50.0733
+cap "latch_1/a_n60_982#" "latch_3/CLK" 1.55039
+cap "latch_3/VP" "latch_3/a_n84_1280#" 0.0592481
+cap "latch_3/CLK" "latch_3/D" 13.5472
+cap "latch_3/CLK" "latch_3/D" 10.7577
+cap "latch_3/D" "latch_3/a_n60_982#" 0.0344477
+cap "latch_3/D" "latch_3/a_n84_1280#" 13.3762
+cap "latch_3/CLK" "latch_3/a_n60_982#" 3.55271e-15
+cap "latch_3/CLK" "latch_3/a_n84_1280#" 1.42109e-14
+cap "latch_3/VP" "latch_3/D" 0.14777
+cap "latch_3/a_n84_1280#" "latch_3/a_n60_982#" -1.42109e-14
+cap "latch_3/CLK" "latch_2/a_n60_982#" 0.651163
+cap "latch_3/CLK" "latch_3/VP" 43.3357
+cap "latch_3/VP" "latch_3/a_n60_982#" 2.24919
+cap "latch_3/VP" "latch_3/a_n84_1280#" 16.0004
+cap "latch_3/CLK" "latch_3/Dbar" 5.37671
+cap "latch_3/Dbar" "latch_3/a_n60_982#" 2.32577
+cap "latch_3/a_n84_1280#" "latch_3/Dbar" 1.93586
+cap "latch_3/VP" "latch_2/a_244_982#" 0.0857917
+cap "latch_3/VP" "latch_3/Dbar" 0.0722319
+merge "latch_0/VP" "VP" -1312.7 0 0 0 0 0 -6748 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5976 0 0 0 0 0 0 0 0 0 0
+merge "VP" "latch_1/VP"
+merge "latch_1/VP" "latch_2/VP"
+merge "latch_2/VP" "latch_3/VP"
+merge "latch_2/Q" "latch_3/D" -132.54 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68 0 0 0 0 0 0 0 0 0 0 0 0
+merge "latch_0/CLK" "latch_1/CLK" -434.198 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -300 0 0 0 0 0 0 0 0 0 0
+merge "latch_1/CLK" "latch_2/CLK"
+merge "latch_2/CLK" "latch_3/CLK"
+merge "latch_1/Qbar" "latch_2/Dbar" -124.157 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68 0 0 0 0 0 0 0 0 0 0 0 0
+merge "latch_0/Qbar" "latch_1/Dbar" -124.157 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68 0 0 0 0 0 0 0 0 0 0 0 0
+merge "latch_0/Q" "latch_1/D" -159.199 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68 0 0 0 0 0 0 0 0 0 0 0 0
+merge "latch_0/D" "a_n174_833#" -99.5093 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68 0 0 0 0 0 0 0 0 0 0 0 0
+merge "latch_0/VN" "latch_1/VN" -2033.63 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5986 0 0 0 0 0 0 0 0 0 0
+merge "latch_1/VN" "latch_2/VN"
+merge "latch_2/VN" "latch_3/VN"
+merge "latch_3/VN" "VN"
+merge "latch_2/Qbar" "latch_3/Dbar" -97.4973 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68 0 0 0 0 0 0 0 0 0 0 0 0
+merge "latch_1/Q" "latch_2/D" -159.199 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68 0 0 0 0 0 0 0 0 0 0 0 0
+merge "latch_0/Dbar" "a_n144_863#" -114.861 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -68 -72 0 0 0 0 0 0 0 0 0 0 0 0
