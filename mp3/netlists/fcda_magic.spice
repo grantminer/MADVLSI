@@ -1,0 +1,25 @@
+* NGSPICE file created from fcda.ext - technology: sky130A
+
+X0 a_n44_1678# Vcn a_n244_1678# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X1 VN Vbn a_n194_10568# VN sky130_fd_pr__nfet_01v8 ad=1 pd=4.5 as=1 ps=4.5 w=4 l=0.5 M=3
+X2 VN a_40_16670# a_n60_16768# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X3 Vout Vcp a_356_4504# VP sky130_fd_pr__pfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X4 a_40_16670# VcpT a_340_11278# VP sky130_fd_pr__pfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X5 VN Vbn a_n194_9768# VN sky130_fd_pr__nfet_01v8 ad=1 pd=4.5 as=1 ps=4.5 w=4 l=0.5 M=3
+X6 Vout Vcn a_356_1678# VN sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X7 a_40_16670# VcnT a_340_16768# VN sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X8 a_340_11278# VbpT VP VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X9 a_356_4504# V2 a_n194_9768# VN sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X10 a_n194_10568# V2 a_n60_11278# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X11 a_340_16768# a_40_16670# VN VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X12 a_n60_11278# VcpT a_n260_13942# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X13 a_n194_9768# V1 a_n44_4504# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X14 a_356_4504# Vbp VP VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X15 a_n60_16768# VcnT a_n260_13942# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X16 VP Vbp a_n44_4504# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X17 a_n44_4504# Vcp a_n244_1678# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X18 a_356_1678# a_n244_1678# VN VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X19 VP VbpT a_n60_11278# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X20 a_340_11278# V1 a_n194_10568# VN sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X21 VN a_n244_1678# a_n44_1678# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+

@@ -1,0 +1,73 @@
+* NGSPICE file created from all.ext - technology: sky130A
+
+.subckt fcda VcnT VcpT VbpT V1 V2 Vbn Vbp Vcp Vcn VP VN Vout
+X0 a_n44_1678# Vcn a_n244_1678# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X1 VN Vbn a_n194_10568# VN sky130_fd_pr__nfet_01v8 ad=1 pd=4.5 as=1 ps=4.5 w=4 l=0.5 M=3
+X2 VN a_40_16670# a_n60_16768# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X3 Vout Vcp a_356_4504# VP sky130_fd_pr__pfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X4 a_40_16670# VcpT a_340_11278# VP sky130_fd_pr__pfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X5 VN Vbn a_n194_9768# VN sky130_fd_pr__nfet_01v8 ad=1 pd=4.5 as=1 ps=4.5 w=4 l=0.5 M=3
+X6 Vout Vcn a_356_1678# VN sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X7 a_40_16670# VcnT a_340_16768# VN sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X8 a_340_11278# VbpT VP VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X9 a_356_4504# V2 a_n194_9768# VN sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X10 a_n194_10568# V2 a_n60_11278# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X11 a_340_16768# a_40_16670# VN VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X12 a_n60_11278# VcpT a_n260_13942# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X13 a_n194_9768# V1 a_n44_4504# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X14 a_356_4504# Vbp VP VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X15 a_n60_16768# VcnT a_n260_13942# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X16 VP Vbp a_n44_4504# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X17 a_n44_4504# Vcp a_n244_1678# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X18 a_356_1678# a_n244_1678# VN VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X19 VP VbpT a_n60_11278# VP sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X20 a_340_11278# V1 a_n194_10568# VN sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X21 VN a_n244_1678# a_n44_1678# VN sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+.ends
+
+.subckt bias Ib Vbp Vcp Vcn a_3150_2600# a_2050_5330#
+X0 Vcp Ib Vbp Vcp sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5 M=2
+X1 a_700_0# Ib a_500_0# Vcp sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X2 a_n100_8040# a_n100_8040# a_100_5330# Vcp sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5 M=4
+X3 a_2450_8040# Vbp Vcn Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X4 a_1000_5300# a_1000_5300# a_100_5330# Vcp sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X5 Vcp Ib a_n100_0# Vcp sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X6 a_2850_8040# Vbp a_2650_8040# Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X7 a_200_2600# a_200_2600# a_100_2660# Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5 M=4
+X8 Vcn a_200_2600# a_100_2660# Vcn sky130_fd_pr__pfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X9 Vcp a_2350_5300# a_2250_5330# Vcp sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X10 a_2250_0# Ib a_2050_0# Vcp sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X11 Vcp Ib Ib Vcp sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5 M=2
+X12 a_2850_0# Ib a_2650_0# Vcp sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X13 a_2250_5330# a_2050_5330# a_2050_5330# Vcp sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X14 a_3150_2600# a_3150_2600# a_2250_2660# Vcn sky130_fd_pr__pfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X15 a_2250_5330# a_2350_5300# a_2350_5300# Vcp sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5 M=4
+X16 a_2250_2660# a_2050_0# Vcn Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X17 a_300_0# Ib Vcp Vcp sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X18 Vbp Vbp Vcn Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5 M=2
+X19 a_2250_2660# a_2050_0# a_2050_0# Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5 M=4
+X20 a_300_8040# Vbp a_100_8040# Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X21 a_900_0# Ib a_700_0# Vcp sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X22 a_700_8040# Vbp a_500_8040# Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X23 a_1000_5300# Vbp Vcn Vcn sky130_fd_pr__pfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X24 a_200_2600# Ib a_900_0# Vcp sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X25 a_2350_5300# Vbp a_3050_8040# Vcn sky130_fd_pr__pfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+X26 a_2450_0# Ib a_2250_0# Vcp sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X27 a_100_5330# a_n100_8040# Vcp Vcp sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X28 Vcp Ib a_2850_0# Vcp sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X29 Vcn Vbp a_2050_5330# Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X30 a_2650_8040# Vbp a_2450_8040# Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X31 a_3050_8040# Vbp a_2850_8040# Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X32 a_100_2660# a_n100_0# a_n100_0# Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X33 a_500_0# Ib a_300_0# Vcp sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X34 a_2650_0# Ib a_2450_0# Vcp sky130_fd_pr__nfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X35 a_100_8040# Vbp a_n100_8040# Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=6 ps=25 w=12 l=0.5
+X36 a_500_8040# Vbp a_300_8040# Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X37 Vcn Vbp a_700_8040# Vcn sky130_fd_pr__pfet_01v8 ad=3 pd=12.5 as=3 ps=12.5 w=12 l=0.5
+X38 a_3150_2600# Ib Vcp Vcp sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=3 ps=12.5 w=12 l=0.5
+.ends
+
+Xfcda_0 fcda_0/Vcn fcda_0/Vcp fcda_0/Vbp fcda_0/V1 fcda_0/V2 Ib fcda_0/Vbp fcda_0/Vcp
++ fcda_0/Vcn VP VN Vout fcda
+Xbias_0 Ib fcda_0/Vbp VN VP fcda_0/Vcp fcda_0/Vcn bias
+
